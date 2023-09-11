@@ -1,43 +1,52 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.1.2/css/all.css">
-    <link rel="stylesheet" type="text/css" href="style.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>My Profile</title>
-  </head>
-  <body>
-    <div class="container">
-      <div class="card">
-        <h1>Hello, I'm Priscilla 👩‍💻</h1>
-        <img src="https://media.licdn.com/dms/image/D5603AQGsy38AFQPJEA/profile-displayphoto-shrink_800_800/0/1687189205520?e=1692835200&v=beta&t=X7Ghp5soiLnHQDTvkMfYD43XUfDBlFpfH2nNGgiNjMU" alt="profile picture" width="200" id="profile-pic" />
-        <p>
-          I love Computer Science and Sustainability🌱. I co-founded a start-up that aims to reduce food waste in households. Check it out below!
-        </p>
-        <a href="https://www.brokol.app" target="_blank"><button><strong>Discover Brokol App</strong></button></a>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.1.2/css/all.css">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="carousel.css">
+  <title>Portfolio</title>
+</head>
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#portfolio">Portfolio</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section id="hero">
+    <h1>Priscilla Uribe</h1>
+      <p>Full Stack Developer based in Vancouver, BC, Canada</p>
+  </section>
+
+  <section id="about">
+    <h2>About Me</h2>
+      <p>I just graduated from UBC with a major in Economics and Co-op Designation. I am passionate about sustainability and start-up development, so I co-founded Brokol App. Now I'm starting a new and exciting chapter on full stack development.</p>
+  </section>
+
+  <section id="portfolio">
+    <h2>Portfolio</h2>
+    <div class="portfolio-carousel">
+      <div class="portfolio-item">
+        <h3>Farmland App</h3>
+        <p>Along with a team of three other developers, I built a responsive web app in the course of seven days. Farmland connects customers with nearby local farms, with exceptional features that enhance the environmental components of carpooling, shopping local and reducing CO2 emissions in real time.</p>
+        <img src="images/farm1.jpg" alt="Portfolio Item 1">
       </div>
-      <div class="card">
-        <h2>Follow me</h2>
-        <ul>
-          <li>
-            <a href="https://www.linkedin.com/in/priscilla-uribe/" target="_blank" class="social-icon">
-              <i class="fa-brands fa-linkedin"></i>
-            </a>
-          </li>
-          <li>
-            <a href="https://www.instagram.com/priscillauribe_/" target="_blank">
-              <i class="fa-brands fa-square-instagram"></i>
-            </a>
-          </li>
-          <li>
-            <a href="https://github.com/priscillauribe" target="_blank">
-              <i class="fa-brands fa-github"></i>
-            </a>
-          </li>
-        </ul>
+
+      <div class="portfolio-item">
+        <h3>Unicorn Marketplace</h3>
+        <p>Built a fictitious marketplace to connect users with potential unicorn listings.</p>
+        <img src="images/unicorn2.png" alt="Portfolio Item 2">
       </div>
     </div>
-  </body>
+  </section>
+
+  <!-- PU added: Included JavaScript for carousel functionality -->
+  <script src="carousel.js"></script>
+</body>
 </html>
